@@ -9,7 +9,8 @@ cimport cython
 import numpy as np
 cimport numpy as np
 
-DTYPE = np.float
+# NP V.1.20++ does not support np.float
+DTYPE = float
 ctypedef np.float_t DTYPE_t
 
 def bbox_overlaps(
